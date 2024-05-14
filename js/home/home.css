@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-1 {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(42, 42, 42, 0.7); /* 70% opacity */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(116, 185, 255, 0.1); /* Soft blue color */
+    color: rgba(255, 255, 255); 
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+}
+
+.navbar-brand img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
+}
+
+.navbar-nav a {
+    color: black;
+    font-family: 'Pistacho Soft', sans-serif;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-nav .nav-item.central a,
+.navbar-nav .nav-item.central a.active {
+    color: #979A9A;
+}
+
+.navbar-nav .nav-item.central a::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item.central a:hover {
+    color: white;
+}
+
+.navbar-nav .nav-item.central a:hover::after {
+    background-color: #AB57F7;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.image-goku-flying {
+    width: 80%;
+    position: absolute;
+    left: 420px;
+    top: 70px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 110px;
+    margin-left: 50px;
+    color: black;
+    max-width: 50%;
+    padding-left: 20px;
+}
+
+.text-img {
+    margin-right: 150px;
+}
+
+.left-content .image-container img {
+    max-width: 50%;
+    height: auto;
+}
+
+.left-content .text-container {
+    text-align: left;
+}
+
+.left-content .text-container h1 {
+    font-size: 24px;
+}
+
+.left-content .text-container p {
+    margin: 10px 0;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: rgba(171, 87, 247, 0.2); 
+    color: white;
+    border-radius: 30px; 
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #979A9A;
+}
+
+.btn-signup {
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #AB57F7;
+    border-radius: 30px;
+    border: 2px solid #AB57F7;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-signup:hover {
+    background-color: #AB57F7;
+    color: white;
+}

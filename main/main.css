@@ -1,0 +1,25 @@
+body {
+    background-color: rgba(237, 174, 27, 0.991);
+}
+
+.content-container {
+    margin-top: 150px;
+    display: flex;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.card {
+    background-color: orange;
+    margin: 30px;
+    overflow: visible;
+    width: 300px; 
+    background-color: orange;
+}
+
+.list-group-item {
+    background-color: orange;
+}

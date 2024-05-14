@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffa500; /* Orange background color */
+  }
+  #form-container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    background: url('dragon_ball_background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  #form-container form {
+    display: grid;
+    gap: 10px;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  textarea {
+    resize: vertical;
+  }
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50; /* Green submit button */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
